@@ -1,0 +1,230 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ body{
+    font-size: 18px;
+    color: hsl(232, 10%, 55%);
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Bigelow Rules', cursive;
+}
+header{
+    background-color: lightblue;
+    background-image: url("images/mobile/image-header.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 15rem;
+    min-width: 250px;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.logo{
+    padding-top: 1rem;
+    padding-left: 0.9rem;
+}
+.hamburger{
+    padding-top: 1rem;
+    padding-right: 0.9rem;
+    cursor: pointer;
+}
+nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: .8rem 0;
+    width: 95%;
+    margin: 0 auto;
+    visibility: hidden;
+}
+nav ul.show{
+    visibility: visible;
+}
+nav ul li{
+    list-style-type: none;
+    padding: .5rem 0;
+    margin: 0.5rem 0;
+}
+nav ul li:last-child{
+    padding: .75rem 1rem;
+    border-radius: 20px;
+    background-color: orange;
+    color: black;
+}
+h1,
+.arrow{
+    text-align: center;
+}
+h1{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #fff;
+    padding-top: 5rem;
+}
+.arrow{
+    margin-top: 8.5em;
+}
+
+main{
+    min-width: 250px;
+}
+.img-container img{
+    width: 100%;
+}
+.text-container{
+    text-align: center;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5px;
+    min-width: 250px;
+}
+h2{
+    padding: 1rem 0.5rem;
+}
+h4{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.graphic-design{
+    background-image: url("images/mobile/image-graphic-design.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    object-position: center;
+    padding-top: 25rem;
+    color: hsl(167, 40%, 24%);
+}
+.photography{
+    background-image: url("images/mobile/image-photography.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    padding-top: 25rem;
+    color: hsl(198, 62%, 26%);
+}
+.text{
+    padding-bottom: 5rem;
+    text-align: center;
+}
+h3{
+    text-align: center;
+    text-transform: capitalize;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0.75rem;
+}
+.client-header{
+    text-transform: uppercase;
+    text-align: center;
+}
+.client-img img{
+    border-radius: 50%;
+    max-width: 75px;
+}
+.emily, .thomas, .jennie{
+    text-align: center;
+    padding: 2rem 0;
+}
+.client-text{
+    padding: 1.5rem 0;
+}
+.name{
+    font-weight: 900;
+    padding: 10px;
+    text-transform: capitalize;
+}
+.job{
+    text-transform: capitalize;
+    opacity: 0.7;
+}
+.bottom-img{
+    display: flex;
+}
+.bottom-img img{
+    width: 50%;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 1rem 0 2rem;
+    background-color: hsl(168, 34%, 41%);
+    width: 100%;
+    min-width: 250px;
+}
+footer ul li{
+    list-style-type: none;
+    padding: 0.3rem 1rem;
+    color: hsl(168, 88%, 13%);
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+footer > .footer-logo, .svg-logo{
+    padding-top: 3rem;
+}
+.footer-logo{
+    font-weight: 900;
+    font-size: 2rem;
+    color: hsl(168, 88%, 13%);
+    padding: 1rem 0;
+}
+
+@media (min-width: 600px) {
+    header{
+        background-image: url("images/desktop/image-header.jpg");
+    }
+    .hamburger{
+        display: none;
+    }
+    nav ul{
+        visibility: visible;
+        flex-direction: row;
+        width: 50%;
+        background-color: transparent;
+        padding: 0;
+        margin: 0;
+        justify-content: space-between;
+    }
+    nav ul li:last-child{
+        background-color: white;
+    }
+    section{
+        display: flex;
+    }
+    .text-container{
+        max-width: 50vw;
+    }
+    .graphic-design{
+        background-image: url("images/desktop/image-graphic-design.jpg");
+        max-width: 50vw; 
+    }
+    .photography{
+        background-image: url("images/desktop/image-photography.jpg");
+    }
+    .egg img{
+        src: url("images/desktop/image-gallery-cone.jpg");
+    }
+    .img-container img{
+        height: 100%;
+    }
+}
+
+/*Change the image from mobile to desktop*/
